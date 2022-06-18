@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.data-list {
+  width: 25%;
+  height: 100vh;
+  overflow: auto;
+  background-color: whitesmoke;
+}
+#map {
+  height: 100vh;
+  width: 75%;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+}
+main {
+  display: flex;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 58px;
+  font-weight: 900;
+  font-size: 24px;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 0;
+}
+.data-list ul.list {
+  padding: 0 1rem;
+  list-style: none;
+}
+.data-list .data-item {
+  margin: 1rem 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+
+.data-list li:last-child .data-item {
+  border: none;
+}
+.data-list .data-item a {
+  text-decoration: none;
+  font-size: 18.45px;
+  font-weight: 800;
+  color: black;
+}
+.data-list .data-item p {
+  font-size: 15.45px;
+  color: #3d3c3c;
+}
+.leaflet-popup-content-wrapper {
+  padding: 0;
+  overflow: hidden;
+}
+.leaflet-popup-content-wrapper p {
+  background-color: gray;
+}
